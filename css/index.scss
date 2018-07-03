@@ -302,19 +302,14 @@
     text-align: center;
 }
 .microMotor_Customer .microMotor_CustomerImg ul{
-    display: flex;
-    flex-flow: wrap;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 .microMotor_Customer .microMotor_CustomerImg li{
-    width: 180px;
-    height: 80px;
-    overflow: hidden;
+    display: inline-block;
+    
 }
 .microMotor_Customer .microMotor_CustomerImg a{
     display: inline-block;
-    
 }
 .microMotor_Customer .microMotor_CustomerImg a img{
     width: 100%;
@@ -382,12 +377,7 @@
     font-size: 16px;
     color: #555555;
 }
-.microMotor_footBox{
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-    
-}
+
 .microMotor_foot .microMotor_footAbt{
     text-align: center;
     padding: 30px 0;
@@ -404,7 +394,22 @@
     color: #fff;
 }
 .tb-btn{display: none;}
+@media(min-width:1200px){
+      .microMotor_footBox{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    
+}
+}
 @media(max-width:768px){
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
     .microMotor_head{
         text-align: center;
         display: none;
@@ -444,9 +449,6 @@
         width: auto;
         height: auto;
     }
-    .microMotor_Customer .microMotor_CustomerImg ul{
-        display: block;
-    }
     .microMotor_footBox{
         padding: 5px;
     }
@@ -459,4 +461,19 @@
     }
     .microMotor_Customer .microMotor_CustomerAbt a{font-size: 16px;}
     .microMotor_footBox{display: block;}
+    .microMotor_productList .row{
+        padding: 0;
+        margin: 0;
+    }
+    .microMotor_swiper{
+        padding: 0;
+        margin: 0;
+    }
+    .microMotor_why dl{
+        padding-left: 10px;
+    }
+    .microMotor_ManufactorList .row{
+        padding: 0;
+        margin: 0;
+    }
 }
