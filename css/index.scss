@@ -306,12 +306,15 @@
 }
 .microMotor_Customer .microMotor_CustomerImg li{
     display: inline-block;
-    
+    width: 170px;
+    margin: 0 7px;
+    display: inline-block;
+    overflow: hidden;
 }
 .microMotor_Customer .microMotor_CustomerImg a{
     display: inline-block;
 }
-.microMotor_Customer .microMotor_CustomerImg a img{
+.microMotor_Customer .microMotor_CustomerImg img{
     width: 100%;
 }
 .microMotor_Customer .microMotor_CustomerAbt{
@@ -475,5 +478,8 @@
     .microMotor_ManufactorList .row{
         padding: 0;
         margin: 0;
+    }
+    .microMotor_Customer .microMotor_CustomerImg img{
+        width: auto;
     }
 }
